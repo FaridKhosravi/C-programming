@@ -1,0 +1,38 @@
+The Instruction of my Jackpot game:
+
+1 - At first the player should enter the credits in credits entery Line Edit.
+
+2 - Then game by default calculates the middle payline, if the player wants to
+    increase its own chance to win, can do it by clicking on the "FirstThird" button
+    to activate calculation for the first and third rows of the reels and also by
+    clicking on the "Diagonal" button can activate calculation for the diagonal paylines.
+
+3 - Now the player should click "Credits" button to insert the credits and in the LCD below the
+    Credit button can sees the number of times that is allowed to spin.
+    The number of spins are calculated based on the number paylines that are chosen by the player.
+    1 payline---> spin_remained = credit / 3^1
+    2 paylines--->spin_remained = credit / 3^2
+    3 paylines--->spin_remained = credit / 3^3
+
+4 - Now the player can start the game by clicking spin button.
+    By each time clicking spin button the spin remained LCD that shows the number of spin decreases the
+    number of spinning by one.
+    In the middle of the game, it is allowed to change the paylines choices and then click on Credit button,
+    but for changing the amount of credit the player needs to reset the game and then start from 1.
+
+5 - Before each time of spinning the player can locks each reel by clicking lock button below the reels.
+    By clicking it again the lock of the reel will be released. if the reels are locked the method of
+    calculation of the score does not change.
+
+6 - During the game The player can sees its score in the TextEdit below the LCD and at the end when the
+    number of spinning is over, the amount of credits, the final score plus the result of winning or losing
+    the game. if the player gain any score during the game, s/he wins, otherwise loses.
+
+7 - When the game is over regardless of its result, all the buttons except Reset and Quit buttons are locked.
+    In this point, if the player wanted to play again should click on the Reset button otherwise clicks on the Quit
+    button to finish the game and close the window.
+8 - The color of the background is replace by tile.png image in the Resources.
+
+P.S.1 - The calculation of the score is described in the "main_window.cpp" file.
+P.S.2 - If the Game does not work properly just click on Quit and run it again.
+
